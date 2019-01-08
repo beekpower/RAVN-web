@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The RAVN Project</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+<link href="jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="scripts/jquery.mousewheel.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/pop-ups.js"></script>
+<script type="text/javascript" src="scripts/nav.js"></script>
+
+ <script>
+$(function() {
+$( ".draggables" ).draggable();
+});
+</script>
+
+</head>
+<body>
+<hgroup>
+  <h1>The RAVN Project</h1>
+  <h4>Future of aerospace surveillance</h4>
+</hgroup>
+<nav>
+  <ul id="menu" class="menu">
+    <li> <a href="#" id="about"> <img src="images/1_menu.jpg" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">About us</span> <span class="descr">Get to know us</span> </span> </a> </li>
+    <li> <a href="#" id="projects" class="projects"> <img src="images/2_menu.jpg" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">The Project</span> <span class="descr">How it works</span> </span> </a> </li>
+    <li> <a href="#" id="contact"> <img src="images/3_menu.jpg" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">Contact</span> <span class="descr">Get in touch</span> </span> </a> </li>
+    <li > <a href="#" id="blog"> <img src="images/1_menu.jpg" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">Blog</span> <span class="descr">Monthly Progress</span> </span> </a> </li>
+  </ul>
+</nav>
+<section id="bg">
+  <!-- use this to create dotted overlay: <section id="overlay"></section> -->
+  <a href="#" class="nextImageBtn" title="next"></a><a href="#" class="prevImageBtn" title="previous"></a><img src="images/gallery/1.jpg" alt="Black Fiberglass Body" title="black fiberglass body" id="bgimg" /></section>
+<div id="preloader"><img src="images/ajax-loader_dark.gif" width="32" height="32" alt="" /></div>
+<div id="img_title"></div>
+<div id="toolbar"><a href="#" title="Maximize" onClick="ImageViewMode('full');return false"><img src="images/toolbar_fs_icon.png" width="50" height="50" alt="" /></a></div>
+<div id="thumbnails_wrapper">
+  <div id="outer_container">
+    <div class="thumbScroller">
+      <div class="container">
+        <div class="content">
+          <div><a href="images/gallery/1.jpg"><img src="images/gallery/1_thumb.jpg" title="Black Fiberglass Body" alt="Black Fiberglass Body" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/2.jpg"><img src="images/gallery/2_thumb.jpg" title="White Fiberglass Body" alt="White Fiberglass Body" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/3.jpg"><img src="images/gallery/3_thumb.jpg" title="Motor Cowling" alt="Motor Cowling" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/7.jpg"><img src="images/gallery/7_thumb.jpg" title="Inside Motor Cowling" alt="Inside Motor Cowling" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/4.jpg"><img src="images/gallery/4_thumb.jpg" title="Carbon fiber frame" alt="Carbon fiber frame" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/5.jpg"><img src="images/gallery/5_thumb.jpg" title="Duct fan engine" alt="Duct fan engine" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/6.jpg"><img src="images/gallery/6_thumb.jpg" title="Test frame" alt="Test frame" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/1.jpg"><img src="images/gallery/1_thumb.jpg" title="Black FiberGlass Body" alt="Black Fiberglass Body" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/2.jpg"><img src="images/gallery/2_thumb.jpg" title="White fiberglass body" alt="white fiberglass body" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/3.jpg"><img src="images/gallery/3_thumb.jpg" title="Motor Cowling" alt="Motor Cowling" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/7.jpg"><img src="images/gallery/7_thumb.jpg" title="Inside Motor Cowling" alt="Inside Motor Cowling" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/4.jpg"><img src="images/gallery/4_thumb.jpg" title="Carbon fiber frame" alt="Carbon fiber frame" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/5.jpg"><img src="images/gallery/5_thumb.jpg" title="Duct fan engine" alt="Duct fan engine" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/6.jpg"><img src="images/gallery/6_thumb.jpg" title="Test frame" alt="Test frame" class="thumb" /></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<article id="popupAbout" class="popupAbout draggables">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupAboutClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1>About Us</h1>
+        <p>The RAVN Project was founded by a group of Hopkinton High School students in an Aerospace Engineering club in 2011. After graduating from high school, the leaders of the group aka us, decided to take the project further and finalize the design. The project is now funded by multiple sponsors and we have been given the privilege of working on the plane in the MIT Aerospace Labs. We will continue to work on the plane around our studies and we plan to have a working prototype in the very near future. Thanks you so much for your interest!</p>
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<article id="popupProjects" class="popupProjects draggables">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupProjectsClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1><div class="tabbed">Design</div> <div style="float: left;">&nbsp;</div> <a style="color:white; text-decoration:none;" href="#" id="advantages" class="advantages"><div class="tab">Advantages</div></a> <div style="float: left;">&nbsp;</div> <a style="color:white; text-decoration:none;" href="#" id="howitworks" class="howitworks"><div class="tab">How it works</div></a> <div style="float: left;">&nbsp;</div> <a style="color:white; text-decoration:none;" href="#" id="application" class="application"><div class="tab">Application</div></a></h1>
+        <div class="border"></div>
+        <h2>Propulsion</h2>
+        <p class="nomargin"><img style="float:left; margin-right: 10px; margin-bottom: 10px;" src="images/design/propulsion.jpg" alt="" class="image"/> Three 120 degree pivoting duct fan units are placed in an equilaterally triangular configuration. These engines are 68 mm , 4000kv, 4S fan, 60,000 RPM duct fans.<br/>
+        </p>
+        <div class="border"></div>
+        <h2>Testing Frame</h2>
+        <p class="nomargin"><img style="float:right; margin-right: 10px;  margin-bottom: 10px;" src="images/design/frame.jpg" alt="" class="image"/> This is an early build of the frame we use for vertical hovering tests. The three duct fans pivot in a 120 degree range and are spread to three locations on the frame that are equidistant from the center of gravity. For now we use this test frame to finish our programming and calculations for stable vertical flight. An outer shell will eventually be made to generate lift when in forward flight. (See below)<br />
+        </p>
+        <div class="border"></div>
+        <h2>The New Frame</h2>
+        <p> To make the plane lighter and stronger, we have designed a new frame in CAD that is ready to be printed via a 3D mill. The frame will be made from a carbon fiber coated depron foam and will allow us to mount the motors, servos, batteries, and other electronics with less extra parts. In addition, the outer shell will fit nicely around the frame.<br /> <br/> <img style="float: left;margin-bottom: 10px; width: 400px;" src="images/design/drawnFrame.jpg" alt="" class="image"/> <img style="float: left; margin-bottom: 10px; width: 400px;" src="images/design/newFrame.jpg" alt="" class="image"/>
+        </p>
+        <div class="border"></div>
+        <h2>Outer Shell</h2>
+        <p class="nomargin"> These are the latest CAD designs of the outer shell. The wide fiberglass fuselage forms a lifting body as well as providing space for payload. We designed a blended wing body to minimize drag and reach high air speeds.<br/> <br/> <img style="margin-bottom: 10px; width: 400px;" src="images/design/outerShell.jpg" alt="" class="image"/> <img style="margin-bottom: 10px; width: 400px;" src="images/design/outerShell2.jpg" alt="" class="image"/>
+        </p>
+        <div class="border"></div>
+        <h2>Flight Control System</h2>
+        <p class="nomargin"><img style="float: left; margin-right: 10px; margin-bottom: 10px;" src="images/design/flightControl.jpg" alt="" class="image"/> The ArduPilot Mega is the heart of the flight control system. It runs on open source software that provides UAV functionality including waypoints, ground station control and more. We communicate wirelessly to the ArduPilot using an Xbee Telemetry Kit. The ArduPilot provides us the microcontroller functionality that we need to control all of the servos and motors on board the plane. Additionally the ArduPilot provides the plane with sensors so that it knows it's heading and location. We have scraped the opensource pilot code and written our own to stabilize our custom built plane in air and provide a transition from vertical to horizontal flight mode. <br/> ArduPilot Mega Features: <br/> 3-axis Accelerometer <br/> 3-axis Gyro<br/> Barometer <br/> 16 MHz ATMega2560 processor<br/> ATMega328 processor<br/>GPS<br/>   
+        </p>
+        <div class="border"></div>
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<article id="popupAdvantages" class="popupAdvantages draggables">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupAdvantagesClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1><a style="color:white; text-decoration:none;" href="#" class="projects" id="projects"><div class="tab">Design</div></a> <div style="float: left;">&nbsp;</div> <div class="tabbed">Advantages</div><div style="float: left;">&nbsp;</div> <a style="color:white; text-decoration:none;" href="#" id="howitworks" class="howitworks"><div class="tab">How it works</div></a> <div style="float: left;">&nbsp;</div> <a style="color:white; text-decoration:none;" href="#" id="application" class="application"><div class="tab">Application</div></a></h1>
+        <div class="border"></div>
+        <h2>Rotor Craft</h2>
+        <p class="nomargin"><img style="float:left; margin-right: 10px; margin-bottom: 10px;" src="images/advantages/helicopter.png" alt="" class="image"/> Rotorcraft such as helicopters and quadrocopters are great for taking off and landing vertically as well as their agility, but they are limited in their ability to accelerate on the horizontal plane.<br/>
+        </p>
+        <div class="border"></div>
+        <h2>Fixed Wing Aircraft</h2>
+        <p class="nomargin"><img style="float:right; margin-left: 10px;  margin-bottom: 10px;" src="images/advantages/predator.png" alt="" class="image"/> Planes are able to achieve very high horizontal speeds and are able to travel long distances, but they require long takeoff/landing strips in order to get in or out of the air.<br />
+        </p>
+        <div class="border"></div>
+        <h2>The RAVN</h2>
+        <p class="nomargin"><img style="width: 480px; float:left; margin-right: 10px;  margin-bottom: 10px;" src="images/advantages/RAVN.jpg" alt="" class="image"/> The RAVN provides us with a design that is the best of both worlds with the limitations of neither. Being both agile and fast in all directional dimensions makes the RAVN superior.<br />
+        </p>
+        <div class="border"></div>
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<article id="popupHowitworks" class="popupHowitworks draggables">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupHowitworksClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1><a style="color:white; text-decoration:none;" href="#" class="projects" id="projects"><div class="tab">Design</div></a> <div style="float: left;">&nbsp;</div> <a style="color:white; text-decoration:none;" href="#" id="advantages" class="advantages"><div class="tab">Advantages</div></a><div style="float: left;">&nbsp;</div> <div class="tabbed">How it works</div> <div style="float: left;">&nbsp;</div> <a style="color:white; text-decoration:none;" href="#" id="application" class="application"><div class="tab">Application</div></a></h1>
+        <div class="border"></div>
+        <h2>How it works</h2>
+        <p class="nomargin"><img style="float:left; width: 850px; margin-bottom: 10px;" src="images/howitworks/hovering.png" alt="" class="image"/> <br/> <img style="float:left; width: 850px; margin-bottom: 10px;" src="images/howitworks/rolling.png" alt="" class="image"/> </br> <img style="float:left; width: 850px; margin-bottom: 10px;" src="images/howitworks/pitching.png" alt="" class="image"/> </br> <img style="float:left; width: 850px; margin-bottom: 10px;" src="images/howitworks/yaw.png" alt="" class="image"/> </br> <img style="float:left; width: 850px; margin-bottom: 10px;" src="images/howitworks/transition.png" alt="" class="image"/> </br> <img style="float:left; width: 850px; margin-bottom: 10px;" src="images/howitworks/forward_flying.png" alt="" class="image"/> </br>
+        </p>
+        <div class="border"></div>
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<article id="popupApplication" class="popupApplication draggables">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupApplicationClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1><a style="color:white; text-decoration:none;" href="#" class="projects" id="projects"><div class="tab">Design</div></a> <div style="float: left;">&nbsp;</div> <a style="color:white; text-decoration:none;" href="#" id="advantages" class="advantages"><div class="tab">Advantages</div></a><div style="float: left;">&nbsp;</div> <a style="color:white; text-decoration:none;" href="#" id="howitworks" class="howitworks"><div class="tab">How it works</div></a> <div style="float: left;">&nbsp;</div> <div class="tabbed">Application</div></h1>
+        <div class="border"></div>
+        <h2>Application</h2>
+        <p class="nomargin"><ul><li>Border surveillance</li><li>Traffic surveillance</li><li>Chemical biological agent detection</li><li>Search and rescue support</li><li>Surveillance plane for police - take off immediately after recieving order and survey target aera before police officers can reach it.</li><li>Recreational UAV / VTOL flight - pivoting ducted fan can provide superb maneuverability</li><li>News report - plane can take off and land on a news van providing a bird's view without calling a helicopter.</li>  </ul><br/>
+        </p>
+        <div class="border"></div>
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<article id="popupContact" class="popupContact draggables">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupContactClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1>Contact Us</h1>
+        <p>Use any of these methods to contact us</p>
+        <p><b>RAVN Project Email:</b> <br/> <a STYLE="TEXT-DECORATION: NONE; color:white;" href="mailto:theravnproject@gmail.com">theravnproject@gmail.com</a> </p>
+        <p><b>Project Leaders:</b> <br/> Ian Randall - <a STYLE="TEXT-DECORATION: NONE; color:white;" href="mailto:randalli1992@yahoo.com">randalli1992@yahoo.com</a> <br/> Nick VanBeek - <a STYLE="TEXT-DECORATION: NONE; color:white;" href="mailto:nicholasvanbeek@gmail.com">nicholasvanbeek@gmail.com</a> <br/> Jerry Zhang - <a STYLE="TEXT-DECORATION: NONE; color:white;" href="mailto:jerryzh.cn@hotmail.com">jerryzh.cn@hotmail.com</a> <br/></p>
+        <a href="https://www.facebook.com/pages/The-RAVN-Project/202113859859560" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a> <a href="#" target="_blank"><img src="images/linkedin.png" alt="Linkedin" /></a> <a href="https://twitter.com/theRAVNproject" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a> 
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<article id="popupBlog" class="popupBlog draggables">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupBlogClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1>Blog</h1>
+        <h2>New Site Launch</h2>
+        <div class="date"><span class="day">24</span> <span class="month">February</span> <span class="year">2013</span> </div>
+        <p>Today is the launch of our newly designed homepage which puts more emphasis on the designs and photos of our project. We hope everyone likes it! <br/> -The RAVN Team</p>
+        <div class="border"></div>
+        <h2>Test Post</h2>
+        <div class="date"><span class="day">22</span> <span class="month">May</span> <span class="year">2011</span> </div>
+        <p>This post is a test. Thanks!</p>
+
+        <div class="border"></div>
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<script type="text/javascript" src="scripts/gallery.js"></script> 
+<script type="text/javascript" src="scripts/jquery.mCustomScrollbar.js"></script>
+</body>
+</html>
